@@ -1,0 +1,53 @@
+.grid-parent{
+  display: grid;
+  border: solid purple 4px;
+  height: 100vh;
+  /* width:100vw;  */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+   "row1 row1 row1 row1"
+   "row2 content content row2-r"
+   "row3 content content row3-r"
+  ;
+}
+.grid-item{
+  border: solid 2px red;
+}
+
+#content{
+  grid-area: content;
+  background: yellow;
+}
+
+.row1{
+  background: blue;
+  grid-area: row1;
+  display:flex;
+
+}
+.flex-item{
+  border:white solid 2px;
+  flex:1;
+  height:100%;
+}
+
+.row2{
+  background: green;
+  grid-area: row2;
+}
+
+.row2-r {
+  background: green;
+  grid-area: row2-r;
+}
+
+.row3{
+  background: purple;
+    grid-area: row3;
+}
+
+.row3-r {
+  background: purple;
+  grid-area: row3-r;
+}
